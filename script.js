@@ -19,7 +19,10 @@ function dropPoop() {
   sky.appendChild(poop);
 
   // 떨어지는 애니메이션
-  const groundY = sky.clientHeight - 40;
+  const game = document.getElementById("game");
+  const ground = document.getElementById("ground");
+  const groundHeight = ground.clientHeight;
+  const groundY = game.clientHeight - groundHeight - 40;
   poop.style.transform = `translateY(${groundY}px)`;
 
   // 무게 증가
