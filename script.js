@@ -21,7 +21,7 @@ function dropPoop() {
   // 떨어지는 애니메이션
   const game = document.getElementById("game");
   const ground = document.getElementById("ground");
-  const groundY = game.clientHeight - ground.clientHeight - 10;
+  const groundY = game.clientHeight - ground.clientHeight + 20;
   poop.style.transform = `translateY(${groundY}px)`;
 
   // 무게 증가
