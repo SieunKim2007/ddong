@@ -22,7 +22,7 @@ function dropPoop() {
   const game = document.getElementById("game");
   const ground = document.getElementById("ground");
   const groundHeight = ground.clientHeight;
-  const groundY = game.clientHeight - groundHeight - 40;
+  const groundY = game.clientHeight - groundHeight - 20;
   poop.style.transform = `translateY(${groundY}px)`;
 
   // 무게 증가
